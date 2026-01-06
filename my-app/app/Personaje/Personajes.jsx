@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Personajes = ({personaje}) => {
   return (
     
-          <div className='bg-amber-950 m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black' key={personaje.id} >
+          <div className='bg-blue-950 m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black' key={personaje.id} >
           <div className='text-center text-amber-100'>
               <h2>{personaje.name}</h2>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image';
+
 import Personajes from './Personajes';
 async function obtener() {
   const res = await fetch(
@@ -23,7 +23,7 @@ async function page() {
           
 
         <h1>Personajes de Los dbz</h1>
-        <div className="flex flex-row flex-wrap justify-center p-10 bg-amber-900">
+        <div className="flex flex-row flex-wrap justify-center p-10 bg-black">
           {datos.items.map((personaje) => (
             <Personajes key={personaje.id} personaje={personaje} />
           ))}

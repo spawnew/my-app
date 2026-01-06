@@ -6,7 +6,7 @@ const Navbar = () => {
           
           <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/Personaje/page.jsx">Personajes</Link></li>
+              <li><Link href="/Personaje">Personajes</Link></li>
         </ul>
           
 
