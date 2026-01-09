@@ -5,7 +5,7 @@ import Link from "next/link";
 const Planetas = ({planeta}) => {
     return (
     
-        <div className='bg-gradient-to-r from-amber-500  via-red-600 rounded hover:border-3 hover:border-amber-300 to-amber-500  m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black' key={planeta.id} >
+        <div className='bg-emerald-950 rounded hover:border-3 hover:border-amber-300 to-amber-500  m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black' key={planeta.id} >
             <div className='text-center text-amber-200 mb-5'>
                 <h2 className='text-xl font-black '>{planeta.name}</h2>
             </div>

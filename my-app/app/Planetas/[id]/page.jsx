@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from "next/link"
 async function obtener(id) {
   const res = await fetch(
     `https://dragonball-api.com/api/planets/${id}`,
@@ -37,15 +37,20 @@ async function DetallePlaneta({ params }) {
           {planeta.characters?.map((character) => (
             <div
               key={character.id}
-              className="text-amber-100 bg-black/40 px-4 py-1 rounded-full text-sm whitespace-normal text-center"
+              className="text-amber-100 bg-black/40 px-4 py-1 rounded-full text-sm whitespace-normal hover:border-amber-600 hover:border-2 text-center"
             >
               {character.name}
             </div>
           ))}
         </div>
-
-      </div>
-    </div>
+              <Link href="/Planetas">
+                  <p className='pt-20 text-2xl text-amber-300 font-extralight hover:border-b-2 hover:border-amber-300 '>Volver a planetas</p>
+              </Link>
+          </div>
+             </div>
+   
+        
+  
   );
 }
 

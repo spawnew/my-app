@@ -4,7 +4,11 @@ import Image from 'next/image';
 const Personajes = ({personaje,button}) => {
   return (
     
-          <div className='bg-gradient-to-r from-amber-500  via-red-600 rounded hover:border-3 hover:border-amber-300 to-amber-500  m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black' key={personaje.id} >
+          <div className=' bg-gradient-to-r from-black to-indigo-900
+  hover:bg-gradient-to-r hover:from-indigo-900 hover:to-black
+  rounded 
+   m-10 flex justify-center items-center  flex-col flex-wrap p-10
+    text-black' key={personaje.id} >
           <div className='text-center text-amber-200 mb-5'>
               <h2 className='text-xl font-black '>{personaje.name}</h2>
           </div>

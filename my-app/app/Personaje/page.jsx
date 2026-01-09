@@ -36,13 +36,16 @@ export default async function Page({ searchParams }) {
         ))}
       </div>
 
-      <div className="flex gap-4 justify-center">
+      <div className="flex gap-4 pl-3 ml-3 justify-around">
               {page >= 0 && page < 6 ? (
-                  <div>
-          <Link href={`?page=${Number(page) - 1}`}>Anterior</Link>
-       
-        <Link href={`?page=${Number(page) + 1}`}>Siguiente</Link>
-                 </div>
+          <div className="text-2xl  flex flex-row ">
+            
+          <Link href={`?page=${Number(page) - 1}`}><p className="pr-5 text-amber-100">Anterior</p>    </Link>
+            
+            <p className="text-amber-300">{page }</p>
+              <Link href={`?page=${Number(page) + 1}`}><p className="pl-5 text-amber-100">Siguiente</p></Link>
+              </div>
+                
               ) :
                   <Link href={`?page=${Number(page) - 1}`}>Anterior</Link>
                   }    
