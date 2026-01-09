@@ -1,9 +1,10 @@
 import Link from "next/link"
-import Personajes from "./Personajes"
-import Image from "next/image"
-async function obtener(page) {
-  const res = await fetch(
-    `https://dragonball-api.com/api/characters?page=${page}`,
+import Planetas from "./Planetas"
+async function obtener() {
+    const res = await fetch(
+      
+
+    `https://dragonball-api.com/api/planets/`,
     { cache: "no-store" }
   )
 
@@ -13,26 +14,19 @@ async function obtener(page) {
 export default async function Page({ searchParams }) {
   const { page = 1 } = await searchParams
   const datos = await obtener(page)
-
+console.log (datos);
   return (
     <div className="bg-gradient-to-r from--500  via-emerald-900 text-white flex flex-col justify-center items-center" >
       <div className="flex flex-row">
         <h1 className=" text-2xl font-black text-pretty  text-red-600">Personajes de Dragon Ball Z</h1>
-       <img className="rounded-4xl border-2 border-red-600 ml-5"
-            src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjWbk-rDDiyXtJC5SpywZ-XHgGpAnz_xst5g&s"}
-          alt="Dragon Ball Z"
-        width={50}
-          height={30}>
-          
-      </img>
-    
+       
   
       </div>
       
       <div className="flex flex-wrap justify-center p-10 ">
-        {datos.items.map((personaje) => (
-            <Personajes key={personaje.id} personaje={personaje}
-            button={<Link href={`/Personaje/${personaje.id}`} className='text-yellow-300 underline mt-5'>Ver mas</Link>}/>
+        {datos.items.map((planeta) => (
+            <Planetas key={planeta.id} planeta={planeta}
+            button={<Link href={`/Planeta/${planeta.id}`} className='text-yellow-300 underline mt-5'>Ver mas</Link>}/>
         ))}
       </div>
 

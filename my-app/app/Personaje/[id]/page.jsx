@@ -20,7 +20,7 @@ const { id } = await params;
 
 
   return (
-    <div className=' m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black   ' key={personaje.id} >
+    <div className=' bg-gradient-to-r from--500  via-emerald-900 m-10 flex justify-center items-center  flex-col flex-wrap p-10 text-black   ' key={personaje.id} >
           <div>
               <h2 className='text-amber-100 font-extrabold text-2xl'>Transformaciones:</h2>
           </div>
