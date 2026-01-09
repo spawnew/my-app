@@ -6,7 +6,7 @@ const Navbar = () => {
           
           <ul className='p-5 flex flex-row justify-between items-center gap-10 font-bold text-lg text-amber-400'>
            
-        <li><Link href="/Home">Home</Link></li>
+        <li><Link href="/">Buscador</Link></li>
         <li><Link href="/Personaje">Personajes</Link></li>
         <li><Link href="/Planetas">Planetas</Link></li>
         </ul>

@@ -17,7 +17,7 @@ const Formu = ({ obtener }) => {
         setForm({ personaje:"" })
     }
     return (
-        <div className='bg-blue-950 w-full m-2 p-2 rounded-lg flex flex-col items-center justify-center'>
+        <div className=' w-full m-2 p-2 rounded-lg flex flex-col items-center justify-center'>
 
           
                  <h3 className='text-amber-100'><b>Ingresa el nombre de una personaje</b> </h3>

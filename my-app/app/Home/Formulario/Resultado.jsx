@@ -16,7 +16,7 @@ console.log(personaje)
 
     async function obtenerFiltrado() {
       const res = await fetch(
-        `https://dragonball-api.com/api/characters?name=${personaje}||race=${personaje}`
+        `https://dragonball-api.com/api/characters?name=${personaje}`
       )
       const data = await res.json()
       setFiltro(data)
@@ -26,7 +26,9 @@ console.log(personaje)
   }, [personaje])
 console.log(filtro)
   return (
-    <div>
+      <div className="flex- flex-col p-20 items-center justify-center ">
+          
+          
       <Formu obtener={obtener} />
 
           {(filtro !=null ) ? (
