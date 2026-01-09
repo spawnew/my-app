@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'; 
 import Personajes from '../Personajes';
+import Link from "next/link"
 async function obtener(id) {
     const res = await fetch(`https://dragonball-api.com/api/characters/${id}`, { cache: "no-store" })
     const products = await res.json()
@@ -43,6 +44,7 @@ const { id } = await params;
               )
           })}
           </div>
+          <Link href="/Personaje"> <p className='text-2xl text-amber-300'>ir a Personajes</p></Link>
           </div>
   ) 
           
