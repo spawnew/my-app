@@ -1,0 +1,24 @@
+.fondo{
+    
+            background-image: url('../casa-kame-de-dragon-ball-3963.jpg');
+            background-size: cover;
+            /* Ajusta la imagen para cubrir el fondo */
+            background-position: center;
+            /* Centra la imagen */
+            background-repeat: no-repeat;
+            /* No repite la imagen */
+            background-attachment: fixed;
+            /* (Opcional) Mantiene la imagen fija al hacer scroll */
+            height: 100vh;
+            /* Asegura que el body ocupe toda la altura */
+            margin: 0;
+            display:flex;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
