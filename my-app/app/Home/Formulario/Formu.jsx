@@ -20,7 +20,7 @@ const Formu = ({ obtener }) => {
         <div className=' w-full m-2 p-2 rounded-lg flex flex-col items-center justify-center'>
 
           
-                 <h3 className='text-amber-100'><b>Ingresa el nombre de una personaje</b> </h3>
+                 <h3 className='text-amber-900 text-2xl font-bold'><b>Ingresa el nombre de una personaje</b> </h3>
 
             
 
