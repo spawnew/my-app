@@ -32,7 +32,7 @@ console.log(filtro)
       <div className="fondo">
      
       
-      <h2 className="text-amber-500 pt-20 font-extrabold  text-4 text-5xl  [-webkit-text-stroke:2px_black]">Bienvenidos al buscador de DBZ</h2>
+      <h2 className="text-amber-500 pt-10 font-extrabold  text-4 text-5xl  [-webkit-text-stroke:2px_black]">Bienvenidos al buscador de DBZ</h2>
           
       <Formu obtener={obtener} />
 {!cargando && <p className="text-amber-100 text-2xl font-light">Cargando...</p>}
