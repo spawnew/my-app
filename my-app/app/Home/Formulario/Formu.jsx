@@ -27,7 +27,7 @@ const Formu = ({ obtener }) => {
 
 
             <form onSubmit={handleSubmit}>
-                <input className='bg-amber-100 text-amber-100 rounded-b-sm p-1 border-2 border-black' type="text"required onChange={handleChange} name="personaje" value={form.personaje} placeholder='Ingresa una personaje'>
+                <input className='bg-blue-100 text-amber-100 rounded-b-sm p-1 border-2 border-black' type="text"required onChange={handleChange} name="personaje" value={form.personaje} placeholder='Ingresa una personaje'>
                 </input>
                
 
