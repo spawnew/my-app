@@ -31,7 +31,7 @@ const Formu = ({ obtener }) => {
                 </input>
                
 
-                <input className='bg-blue-700 p-2 m-2 rounded-xl text-amber-50 hover:bg-blue-400' type="submit" ></input>
+                <input className='bg-blue-500 p-2 m-2 rounded-xl text-amber-50 hover:bg-blue-400' type="submit" ></input>
 
             </form>
 
